@@ -1,0 +1,97 @@
+:root {
+  --bg-color: #0b1410;
+  --accent-color: #1b4332;
+  --text-color: #f1f1e8;
+  --font-main: "Georgia", serif;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}
+img {
+  border: 3px solid #e9c46a;
+  width: 250px;
+}
+.name {
+  color: var(--accent-color);
+}
+nav a:hover {
+  color: #e9c46a;
+  text-align: center;
+}
+[href^="mailto"] {
+  padding: 5px;
+}
+#main-header {
+  padding: 20px;
+  border-bottom: 2px solid var(--accent-color);
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 30px;
+  color: var(--accent-color);
+}
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main {
+  border-top: 2px solid var(--accent-color);
+  padding-top: 20px;
+}
+section a {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+section a:hover {
+  color: #e9c46a;
+}
+.right-col {
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row p {
+  width: 45%;
+  padding: 10px;
+}
+.row h3,
+.row h4 {
+  width: 100%;
+}
+main a {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+main a:hover {
+  color: #e9c46a;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  padding: 6px;
+  border: 1px solid #e9c46a;
+}
+.content-card {
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  max-width: 900px;
+  border: 1px solid #e9c46a;
+}
+.content-card a {
+  color: var(--text-color);
+}
